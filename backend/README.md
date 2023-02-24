@@ -17,5 +17,6 @@ Official requirements are (but this probably works with other versions too):
 7. `$ pip install -r requirements.txt`
 
 ## Running development environment
-1. `$ docker-compose -f docker-compose.dev.yaml up postgres -d`
-2. `$ cd tastebudsd && flask run --debug`
+1. `$ source venv/bin/activate`
+2. `$ docker-compose -f docker-compose.dev.yaml up postgres -d`
+3. `$ cd tastebudsd && flask run --debug`

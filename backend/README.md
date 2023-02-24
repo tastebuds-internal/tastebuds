@@ -26,6 +26,9 @@ Official requirements are (but this probably works with other versions too):
 2. `$ docker-compose -f docker-compose.dev.yaml up postgres -d`
 3. `$ cd tasted && flask run --debug`
 
+## Set up Git Pre-commit Hooks
+1. `$ pre-commit install`
+
 ## API spec
 
 `GET /api/v1/feeds/following`

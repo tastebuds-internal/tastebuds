@@ -15,7 +15,7 @@ class Config:
     SQLALCHEMY_ECHO = False
 
     # database connection
-    POSTGRES_USER = os.environ.get('POSTGRES_USER', 'tastebudsd')
+    POSTGRES_USER = os.environ.get('POSTGRES_USER', 'tasted')
     POSTGRES_PASSWORD = os.environ.get('POSTGRES_PASSWORD', 'supersecretpassword')
     POSTGRES_HOST = os.environ.get('POSTGRES_HOST', 'localhost')
     POSTGRES_PORT = os.environ.get('POSTGRES_PORT', 5433)

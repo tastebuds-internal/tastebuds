@@ -1,5 +1,10 @@
 # tastebuds backend
 
+## Components
+
+### tasted
+`tasted`, which stands for `taste daemon`, is our frontend HTTP server. This daemon serves traffic for our public facing API.
+
 ## Installation
 
 Official requirements are (but this probably works with other versions too):
@@ -19,4 +24,4 @@ Official requirements are (but this probably works with other versions too):
 ## Running development environment
 1. `$ source venv/bin/activate`
 2. `$ docker-compose -f docker-compose.dev.yaml up postgres -d`
-3. `$ cd tastebudsd && flask run --debug`
+3. `$ cd tasted && flask run --debug`

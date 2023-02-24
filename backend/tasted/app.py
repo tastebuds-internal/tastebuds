@@ -1,5 +1,5 @@
 from flask import Blueprint, Flask
-from tastebudsd.settings import ProdConfig
+from tasted.settings import ProdConfig
 
 
 def create_app(config_object=ProdConfig):

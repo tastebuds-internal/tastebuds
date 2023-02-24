@@ -28,6 +28,9 @@ Official requirements are (but this probably works with other versions too):
 3. Wait until the postgres server is up & healthy, then run `$ python3.10 createdb.py --drop --dummy`
 3. `$ cd tasted && flask run --debug`
 
+## Set up Git Pre-commit Hooks
+1. `$ pre-commit install`
+
 ## API spec
 
 `GET /api/v1/feeds/following`

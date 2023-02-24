@@ -9,6 +9,8 @@ class RestaurantDao(db.Model):
     id = db.Column(UUID, default=uuid.uuid4, nullable=False, primary_key=True)
     name = db.Column(Text, nullable=False)
 
+    reviews = db.relationship("ReviewDao", back_populates="restaurant")
+
     @classmethod
     def get_by_id(cls, _id):
         return cls.query.get(_id)

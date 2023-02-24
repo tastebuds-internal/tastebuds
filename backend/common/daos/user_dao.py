@@ -10,6 +10,8 @@ class UserDao(db.Model):
     first_name = db.Column(Text, nullable=False)
     last_name = db.Column(Text, nullable=False)
 
+    reviews = db.relationship("ReviewDao", back_populates="user")
+
     @classmethod
     def get_by_id(cls, _id):
         return cls.query.get(_id)

@@ -1,11 +1,16 @@
 from flask import Blueprint, Flask
+from flask_sqlalchemy import SQLAlchemy
 from tasted.settings import ProdConfig
+
+from common.daos.base import db
 
 
 def create_app(config_object=ProdConfig):
     app = Flask(__name__.split(".")[0])
     app.url_map.strict_slashes = False
     app.config.from_object(config_object)
+
+    db.init_app(app)
 
     create_api(app)
 

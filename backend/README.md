@@ -19,11 +19,13 @@ Official requirements are (but this probably works with other versions too):
 4. `$ sudo apt install python3.10-venv`
 5. `$ python3.10 -m venv venv`
 6. `$ source venv/bin/activate`
-7. `$ pip install -r requirements.txt`
+7. `$ sudo apt-get install python-psycopg2`
+8. `$ pip install -r requirements.txt`
 
 ## Running development environment
 1. `$ source venv/bin/activate`
 2. `$ docker-compose -f docker-compose.dev.yaml up postgres -d`
+3. Wait until the postgres server is up & healthy, then run `$ python3.10 createdb.py --drop --dummy`
 3. `$ cd tasted && flask run --debug`
 
 ## API spec

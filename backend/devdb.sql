@@ -1,0 +1,16 @@
+BEGIN TRANSACTION;
+
+INSERT INTO users (id, first_name, last_name) VALUES ('00000000-0000-0000-0000-000000000000', 'SpongeBob', 'SquarePants');
+INSERT INTO users (id, first_name, last_name) VALUES ('11111111-1111-1111-1111-111111111111', 'Patrick', 'Star');
+INSERT INTO users (id, first_name, last_name) VALUES ('22222222-2222-2222-2222-222222222222', 'Mr.', 'Krabs');
+INSERT INTO users (id, first_name, last_name) VALUES ('33333333-3333-3333-3333-333333333333', 'Squidward', 'Tentacles');
+
+INSERT INTO restaurants (id, name) VALUES ('00000000-0000-0000-0000-000000000000', 'Krusty Krab');
+INSERT INTO restaurants (id, name) VALUES ('11111111-1111-1111-1111-111111111111', 'The Salty Spitoon');
+
+INSERT INTO reviews (id, user_id, restaurant_id, text_content) VALUES ('00000000-0000-0000-0000-000000000000', '00000000-0000-0000-0000-000000000000', '00000000-0000-0000-0000-000000000000', 'Ahoy there, landlubbers! The Krusty Krab be the tastiest joint in all of Bikini Bottom! The Krabby Patties are pure perfection, and the service is as fast as a jellyfish sting. Mr. Krabs may be a bit of a cheapskate, but he knows how to run a tight ship. If ye be lookin'' for a feed that''ll make ye say "Aye, aye, Captain!", then head on over to the Krusty Krab!');
+INSERT INTO reviews (id, user_id, restaurant_id, text_content) VALUES ('11111111-1111-1111-1111-111111111111', '11111111-1111-1111-1111-111111111111', '00000000-0000-0000-0000-000000000000', 'Oh boy, oh boy, oh boy! The Krusty Krab is the BEST place to get some grub in Bikini Bottom! The Krabby Patties are like a party in your mouth, and don''t even get me started on the fries - they''re so good, they''ll make you wanna do a belly flop!\n\nAnd the service? Top-notch! Mr. Krabs may be a bit of a penny-pincher, but he always makes sure his customers are happy. And Squidward, well, he may not be the friendliest fella around, but he sure knows how to cook up a mean burger!\n\nSo if you''re lookin'' for a delicious meal that''ll make you feel like a true Bikini Bottomian, head on over to the Krusty Krab - I give it two thumbs up! Or would that be two starfish arms up? Either way, it''s a winner!');
+INSERT INTO reviews (id, user_id, restaurant_id, text_content) VALUES ('22222222-2222-2222-2222-222222222222', '33333333-3333-3333-3333-333333333333', '00000000-0000-0000-0000-000000000000', 'Well, if you must know, the Krusty Krab is a decent enough establishment. The Krabby Patties are admittedly quite tasty, and the fries are crispy enough. But don''t expect any warmth or friendliness from the staff - Mr. Krabs is too busy counting his money, and SpongeBob is...well, SpongeBob. And as for the decor, let''s just say it''s not exactly high-end. But if you''re in the mood for a quick bite, the Krusty Krab will suffice. Just don''t expect to be blown away, unless you count the occasional explosion in the kitchen.');
+INSERT INTO reviews (id, user_id, restaurant_id, text_content) VALUES ('33333333-3333-3333-3333-333333333333', '22222222-2222-2222-2222-222222222222', '11111111-1111-1111-1111-111111111111', 'If ye ask me, The Salty Spitoon is nothin'' but trouble. Sure, they may have a tough reputation, but what good is that if ye can''t even enjoy a decent meal? And don''t even get me started on the prices - they''re enough to make even me, Mr. Krabs, feel a bit queasy!');
+
+COMMIT;

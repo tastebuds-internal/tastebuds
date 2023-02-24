@@ -15,3 +15,7 @@ Official requirements are (but this probably works with other versions too):
 5. `$ python3.10 -m venv venv`
 6. `$ source venv/bin/activate`
 7. `$ pip install -r requirements.txt`
+
+## Running development environment
+1. `$ docker-compose -f docker-compose.dev.yaml up postgres -d`
+2. `$ cd tastebudsd && flask run --debug`

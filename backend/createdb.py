@@ -6,9 +6,10 @@ from tasted.settings import DevConfig
 from common.daos.base import db
 from tasted.app import create_app
 
+
 @click.command()
-@click.option('--drop', help='Drop database', is_flag=True)
-@click.option('--dummy', help='Insert dummy data', is_flag=True)
+@click.option("--drop", help="Drop database", is_flag=True)
+@click.option("--dummy", help="Insert dummy data", is_flag=True)
 def create(drop, dummy):
     app = create_app(DevConfig)
     app.app_context().push()
@@ -25,5 +26,5 @@ def create(drop, dummy):
             conn.execute(text(devdb_sql))
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     create()

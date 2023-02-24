@@ -3,8 +3,9 @@ from .base import db
 from sqlalchemy import Text
 from sqlalchemy.dialects.postgresql import UUID
 
+
 class RestaurantDao(db.Model):
-    __tablename__ = 'restaurants'
+    __tablename__ = "restaurants"
 
     id = db.Column(UUID, default=uuid.uuid4, nullable=False, primary_key=True)
     name = db.Column(Text, nullable=False)

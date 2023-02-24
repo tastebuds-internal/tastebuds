@@ -3,8 +3,9 @@ from .base import db
 from sqlalchemy import Text
 from sqlalchemy.dialects.postgresql import UUID
 
+
 class UserDao(db.Model):
-    __tablename__ = 'users'
+    __tablename__ = "users"
 
     id = db.Column(UUID, default=uuid.uuid4, nullable=False, primary_key=True)
     first_name = db.Column(Text, nullable=False)

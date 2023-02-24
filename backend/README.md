@@ -3,7 +3,7 @@
 
 ## API spec
 
-`GET /feeds/following`
+`GET /api/v1/feeds/following`
 ```json
 {
     "reviews": [

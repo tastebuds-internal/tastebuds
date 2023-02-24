@@ -1,0 +1,8 @@
+.DS_STORE
+**/.DS_Store
+
+venv/
+__pycache__/
+**/__pycache__/
+
+.postgres/

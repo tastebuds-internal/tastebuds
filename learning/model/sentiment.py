@@ -1,6 +1,5 @@
 from abc import ABC, abstractmethod
 from typing import Iterable
-from typing import Iterable
 import transformers
 import torch
 from pytorch_lightning import LightningModule

@@ -28,18 +28,22 @@ Official requirements are (but this probably works with other versions too):
 3. Wait until the postgres server is up & healthy, then run `$ python3.10 createdb.py --drop --dummy`
 3. `$ cd tasted && flask run --debug`
 
+## Running unit tests
+Currently, unit tests use the same postgres database as the development environment, so make sure that your developer environment's postgres is running & that the database has been reset.
+
+vscode is configured to automatical detect unit tests, so to run a test go to a file and click the play icon.
+
 ## Set up Git Pre-commit Hooks
 1. `$ pre-commit install`
 
 ## API spec
-
-`GET /api/v1/feeds/following`
+`GET /api/v1/feed`
 ```json
 {
     "reviews": [
         {
             "id": "af449c80-87bc-4ba4-98bb-cf4293c5ea9c",
-            "created_date": "2023-02-23T18:25:43.511Z",
+            "created_at": "2023-02-23T18:25:43.511Z",
             "text_content": "🔥",
             "user": {
                 "id": "af467260-d28d-4d4f-8f56-8082ec02686d",
@@ -49,14 +53,7 @@ Official requirements are (but this probably works with other versions too):
             "restaurant": {
                 "id": "637982cf-5ba2-417e-a26c-31e898f12463",
                 "name": "Viva Goa"
-            },
-            "restaurant_menu_items": [
-                {
-                    "id": "3846c42a-b99c-4399-a9bb-8558c041d2f0",
-                    "restaurant_id": "637982cf-5ba2-417e-a26c-31e898f12463",
-                    "name": "Chicken Biryani"
-                }
-            ]
+            }
         }
     ]
 }

@@ -2,7 +2,7 @@ import click
 from sqlalchemy import text
 from sqlalchemy_utils import drop_database, create_database
 
-from tasted.settings import DevConfig
+from tasted.configs import DevConfig
 from common.daos.base import db
 from tasted.app import create_app
 

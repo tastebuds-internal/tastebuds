@@ -37,8 +37,7 @@ vscode is configured to automatical detect unit tests, so to run a test go to a 
 1. `$ pre-commit install`
 
 ## API spec
-
-`GET /api/v1/feeds/following`
+`GET /api/v1/feed`
 ```json
 {
     "reviews": [

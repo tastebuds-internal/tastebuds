@@ -16,7 +16,7 @@ class ReviewDao(db.Model):
     )
 
     user = db.relationship("UserDao", back_populates="reviews")
-    restaurant = db.relationship("RestaurantDao", back_populates="restaurants")
+    restaurant = db.relationship("RestaurantDao", back_populates="reviews")
 
     @classmethod
     def get_by_id(cls, _id):

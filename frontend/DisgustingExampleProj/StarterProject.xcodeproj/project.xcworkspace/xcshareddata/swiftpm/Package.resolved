@@ -1,0 +1,59 @@
+{
+  "pins" : [
+    {
+      "identity" : "arrow",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/freshOS/Arrow",
+      "state" : {
+        "revision" : "f5f9a3bb354e7bc69ca184c0cd95e67eb8254798",
+        "version" : "6.0.0"
+      }
+    },
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher",
+      "state" : {
+        "revision" : "af4be924ad984cf4d16f4ae4df424e79a443d435",
+        "version" : "7.6.2"
+      }
+    },
+    {
+      "identity" : "networking",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/freshOS/Networking",
+      "state" : {
+        "revision" : "d4c9298a71a4ef66683da8cf21d700482c7f284b",
+        "version" : "1.2.1"
+      }
+    },
+    {
+      "identity" : "promises",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/google/promises",
+      "state" : {
+        "branch" : "master",
+        "revision" : "ec957ccddbcc710ccc64c9dcbd4c7006fcf8b73a"
+      }
+    },
+    {
+      "identity" : "stevia",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/freshOS/Stevia",
+      "state" : {
+        "revision" : "cfb1a1d2159277bb553c3dc46f3f742c0275566d",
+        "version" : "5.1.2"
+      }
+    },
+    {
+      "identity" : "then",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/freshOS/Then",
+      "state" : {
+        "revision" : "7fefb1cae999b58318edc149f91dc2bda8d194eb",
+        "version" : "7.0.0"
+      }
+    }
+  ],
+  "version" : 2
+}

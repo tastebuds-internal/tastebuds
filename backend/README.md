@@ -28,6 +28,11 @@ Official requirements are (but this probably works with other versions too):
 3. Wait until the postgres server is up & healthy, then run `$ python3.10 createdb.py --drop --dummy`
 3. `$ cd tasted && flask run --debug`
 
+## Running unit tests
+Currently, unit tests use the same postgres database as the development environment, so make sure that your developer environment's postgres is running & that the database has been reset.
+
+vscode is configured to automatical detect unit tests, so to run a test go to a file and click the play icon.
+
 ## Set up Git Pre-commit Hooks
 1. `$ pre-commit install`
 

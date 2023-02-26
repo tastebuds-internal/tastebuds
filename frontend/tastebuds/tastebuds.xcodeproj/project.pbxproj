@@ -18,6 +18,14 @@
 		0655850429AAEB1A006626F4 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655850329AAEB1A006626F4 /* MapView.swift */; };
 		0655850729AAEEA5006626F4 /* LeftRightPadding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655850629AAEEA5006626F4 /* LeftRightPadding.swift */; };
 		0655850A29AAEF47006626F4 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655850929AAEF47006626F4 /* Schema.swift */; };
+		0655850C29AC1154006626F4 /* InternalApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655850B29AC1154006626F4 /* InternalApi.swift */; };
+		0655850E29AC119F006626F4 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655850D29AC119F006626F4 /* Api.swift */; };
+		0655851129AC139E006626F4 /* ProfilePhoto.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655851029AC139E006626F4 /* ProfilePhoto.swift */; };
+		0655851329AC150F006626F4 /* ReviewRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655851229AC150F006626F4 /* ReviewRow.swift */; };
+		0655851529AC16FE006626F4 /* ProfileDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655851429AC16FE006626F4 /* ProfileDetail.swift */; };
+		0655851729AC1765006626F4 /* ReviewList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655851629AC1765006626F4 /* ReviewList.swift */; };
+		0655851929AC17C7006626F4 /* FeedHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655851829AC17C7006626F4 /* FeedHeader.swift */; };
+		0655851C29AC1CCB006626F4 /* ReviewDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0655851B29AC1CCB006626F4 /* ReviewDetail.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +60,14 @@
 		0655850329AAEB1A006626F4 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		0655850629AAEEA5006626F4 /* LeftRightPadding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeftRightPadding.swift; sourceTree = "<group>"; };
 		0655850929AAEF47006626F4 /* Schema.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		0655850B29AC1154006626F4 /* InternalApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InternalApi.swift; sourceTree = "<group>"; };
+		0655850D29AC119F006626F4 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
+		0655851029AC139E006626F4 /* ProfilePhoto.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfilePhoto.swift; sourceTree = "<group>"; };
+		0655851229AC150F006626F4 /* ReviewRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewRow.swift; sourceTree = "<group>"; };
+		0655851429AC16FE006626F4 /* ProfileDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetail.swift; sourceTree = "<group>"; };
+		0655851629AC1765006626F4 /* ReviewList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewList.swift; sourceTree = "<group>"; };
+		0655851829AC17C7006626F4 /* FeedHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeader.swift; sourceTree = "<group>"; };
+		0655851B29AC1CCB006626F4 /* ReviewDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewDetail.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,12 +118,10 @@
 		065584D429AADFCA006626F4 /* tastebuds */ = {
 			isa = PBXGroup;
 			children = (
+				0655850F29AC1376006626F4 /* Views */,
 				0655850829AAEF1C006626F4 /* Api */,
 				0655850529AAEE94006626F4 /* Utils */,
-				065584D529AADFCA006626F4 /* TastebudsApp.swift */,
 				065584D729AADFCA006626F4 /* ContentView.swift */,
-				0655850329AAEB1A006626F4 /* MapView.swift */,
-				065584FF29AAE287006626F4 /* PhotoCard.swift */,
 				065584D929AADFCB006626F4 /* Assets.xcassets */,
 				065584DB29AADFCB006626F4 /* Preview Content */,
 			);
@@ -151,8 +165,34 @@
 			isa = PBXGroup;
 			children = (
 				0655850929AAEF47006626F4 /* Schema.swift */,
+				0655850B29AC1154006626F4 /* InternalApi.swift */,
+				0655850D29AC119F006626F4 /* Api.swift */,
 			);
 			path = Api;
+			sourceTree = "<group>";
+		};
+		0655850F29AC1376006626F4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				0655851429AC16FE006626F4 /* ProfileDetail.swift */,
+				065584D529AADFCA006626F4 /* TastebudsApp.swift */,
+				0655850329AAEB1A006626F4 /* MapView.swift */,
+				065584FF29AAE287006626F4 /* PhotoCard.swift */,
+				0655851029AC139E006626F4 /* ProfilePhoto.swift */,
+				0655851A29AC1877006626F4 /* Review */,
+				0655851829AC17C7006626F4 /* FeedHeader.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		0655851A29AC1877006626F4 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				0655851229AC150F006626F4 /* ReviewRow.swift */,
+				0655851629AC1765006626F4 /* ReviewList.swift */,
+				0655851B29AC1CCB006626F4 /* ReviewDetail.swift */,
+			);
+			path = Review;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -285,11 +325,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0655851529AC16FE006626F4 /* ProfileDetail.swift in Sources */,
+				0655850C29AC1154006626F4 /* InternalApi.swift in Sources */,
 				0655850A29AAEF47006626F4 /* Schema.swift in Sources */,
+				0655851129AC139E006626F4 /* ProfilePhoto.swift in Sources */,
+				0655851C29AC1CCB006626F4 /* ReviewDetail.swift in Sources */,
 				0655850729AAEEA5006626F4 /* LeftRightPadding.swift in Sources */,
+				0655851729AC1765006626F4 /* ReviewList.swift in Sources */,
 				0655850029AAE287006626F4 /* PhotoCard.swift in Sources */,
 				0655850429AAEB1A006626F4 /* MapView.swift in Sources */,
+				0655851929AC17C7006626F4 /* FeedHeader.swift in Sources */,
 				065584D829AADFCA006626F4 /* ContentView.swift in Sources */,
+				0655850E29AC119F006626F4 /* Api.swift in Sources */,
+				0655851329AC150F006626F4 /* ReviewRow.swift in Sources */,
 				065584D629AADFCA006626F4 /* TastebudsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
